@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JAVASCRIPT</title>
+    <!-- JAVASCRIPT entre les 2 balises script dans le <head> :-->
+    <script>
+        z = 0
+        momo = 0
+        u = 0
+        var tata = ["", ]
+        var no = window.prompt("Saisissez une note ou entrez 0 pour stopper la saisie");
+        while (no != "0") {
+            u++;
+            z = parseInt(z) + parseInt(no);
+
+            var no = window.prompt("Saisissez une note ou entrez 0 pour stopper la saisie");
+        }
+        momo = z / u;
+        alert("Moyenne: " + momo + "\nSomme: " + z);
+
+
+
+        var y = 0
+        var n = window.prompt("Saisissez un nombre entier");
+        while (y < n) {
+            tota = n - y;
+            alert(tota);
+            y++;
+        }
+
+
+
+
+        i = 1
+        var tab = ["", ]
+        var mingzi = window.prompt("Saisissez le prénom N°" + i + " ou Clic sur Annuler pour arrêter la saisie.");
+        while (mingzi != null) {
+            i++;
+            tab = tab + " " + mingzi;
+            var mingzi = window.prompt("Saisissez le prénom N°" + i + " ou Clic sur Annuler pour arrêter la saisie.");
+
+        }
+        i--;
+        alert("nombre de prénoms saisis: " + i + "\nliste des prénoms saisis: " + tab);
+
+
+        var num = window.prompt("Donnez un nombre entier");
+        var ope = window.prompt("Donnez un opérateur (-,+,*,/)");
+        var nomb = window.prompt("Donnez un deuxième nombre");
+        var addi = parseInt(num) + parseInt(nomb);
+        if (ope == "+") {
+            alert(addi);
+        } else if (ope == "-") {
+            alert(num - nomb);
+        } else if (ope == "*") {
+            alert(num * nomb);
+        } else if (ope == "/") {
+            alert(num / nomb);
+        } else {
+            alert("erreur: entrez un opérateur valable");
+
+        }
+
+
+        var annee = window.prompt("Quelle est votre année de naissance?");
+        var age = 2021 - annee;
+        if (age >= 18) {
+            alert("Vous avez " + age + "ans, vous êtes majeur");
+        } else {
+            alert("Vous avez " + age + "ans, vous êtes mineur");
+        }
+
+
+        var nombre = window.prompt("Ecrivez un nombre");
+        var result = nombre % 2;
+        if (result == 0) {
+            alert("nombre pair");
+        } else {
+            alert("nombre impair");
+        }
+
+
+        var a = 100;
+        alert("Ceci est une chaîne de caractères: " + a);
+        var b = 100;
+        b--;
+        alert(b);
+        var c = 1.00 + parseInt(a);
+        alert(c);
+
+
+        var nom = window.prompt("Entrez votre nom");
+        var prenom = window.prompt("Entrez votre prénom");
+        if (window.confirm("Etes vous un homme") == true) {
+            alert("Bonjour Monsieur " + nom + " " + prenom + "\nBienvenue sur notre site web");
+        } else {
+            alert("Bonjour Madame " + nom + " " + prenom + "\nBienvenue sur notre site web");
+        }
+
+
+        alert("mon premier script en javascript !");
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
