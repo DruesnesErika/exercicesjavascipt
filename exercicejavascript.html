@@ -8,7 +8,22 @@
     <title>JAVASCRIPT</title>
     <!-- JAVASCRIPT entre les 2 balises script dans le <head> :-->
     <script>
+        // Nombre de voyelles
+
+        var mot = window.prompt("Ecrivez un mot");
+        while (mot = "a" || "e" || "i" || "o" || "u" || "y") {
+            alert(mot + " mesure " + mot.length + " codets");
+        }
+
         // Multiples
+        var x = window.prompt("Saisissez un nombre entier");
+        var nn = window.prompt("Vous voulez le multiplier jusque combien?");
+        multiple = 0
+        while (multiple < nn) {
+            multiple++;
+            fin = x * multiple;
+            alert(x + " x " + multiple + " = " + fin)
+        }
 
         // Moyenne
 

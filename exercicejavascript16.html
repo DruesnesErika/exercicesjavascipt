@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Vos coordonnées:</h2>
+    <br>
+    <p>*Ces zones sont obligatoires pour envoyer le formulaire.</p>
+
+
+    <form method="post">
+        <label for="societe">Soci&eacute;t&eacute; : </label>
+        <input type="text" name="societe" id="societe" required>
+        <span id="missSociete"></span>*<br><br>
+
+        <label for="personnecontact">Personne &agrave; contacter: </label>
+        <input type="text" name="personnecontact" id="personnecontact" required>
+        <span id="missPersonneContact"></span>*<br><br>
+
+        <label for="adresseentreprise">Adresse de l'entreprise : </label><br>
+        <textarea name="adresseentreprise" rows="5" cols="20"></textarea><br><br>
+
+        <label for="codepostal">Code postal : </label>
+        <input type="text" name="codepostal" id="codepostal" required>
+        <span id="missCodePostal"></span>*<br><br>
+
+        <label for="ville">Ville : </label>
+        <input type="text" name="ville" id="ville" required>
+        <span id="missVille"></span>*<br><br>
+
+        <label for="mail">E-mail : </label>
+        <input type="email" name="mail" id="mail" required>
+        <span id="missMail"></span>*<br><br>
+
+        <label for="telephone">T&eacute;l&eacute;phone : </label>
+        <input type="tel" name="telephone" id="telephone"><br><br>
+
+        <label for="environnement">Sélectionnez l'environnement technique du projet:</label><br>
+
+        <select id="environnement">
+            <option value="Choisissez" selected >Choisissez</option>
+            <option value="Access">Access</option>
+            <option value="Java">Java</option>
+            <option value="Delphi">Delphi</option>
+            <option value="Windev">Windev</option>
+            <option value="Visual Basic">Visual Basic</option>
+            <option value="Power Builder">Power Builder</option>
+            <option value="Internet">Internet</option>
+            <option value="Intranet">Intranet</option>
+            <option value="Windows NT">Windows NT</option>
+            <option value="Unix">Unix</option>
+            <option value="SQL Server">SQL Server</option>
+            <option value="Oracle">Oracle</option>
+            <option value="Autres">Autres...</option>
+        </select>
+        <textarea name="environnement" rows="5" cols="15"></textarea> <br><br>
+
+        <input type="submit" value="Envoyer" id="boutonenvoi">
+        <input type="reset" value="Effacer" id="boutoneffacer">
+
+        <!-- <label for="sujet">Sujet*:</label>
+            <select id="sujet"> 
+    <option value="Veulliez selectionner un sujet" disabled selected > Veuillez s&eacute;lectionner un sujet</option>
+    <option value="Mes commandes">Mes commandes</option>
+    <option value="Question sur un produit">Question sur un produit</option>
+    <option value="Reclamation">R&eacute;clamation</option>
+    <option value="Autres">Autres</option>
+</select><br> Votre question*:<textarea name="question" rows="5" cols="30" required title="Posez votre question"></textarea> -->
+
+
+    </form>
+    <script src="javascriptexercice16.js">
+    </script>
+</body>
+
+</html>
